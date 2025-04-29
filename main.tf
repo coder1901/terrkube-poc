@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name-${random_id.suffix.hex}"
+  bucket = "my-unique-bucket-names-${random_id.suffix.hex}"
 }
 
 resource "random_id" "suffix" {
